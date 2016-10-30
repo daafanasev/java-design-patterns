@@ -14,7 +14,7 @@ tags:
 Wrapper
 
 ## Цель / Intent /
-Преобразует интерфейс класса в другой ожидаемый интерфейс клиентов. Адаптер позволяет классам работать вместе с несовместимыми интерфейсами / Convert the interface of a class into another interface the clients
+Преобразует интерфейс класса в другой ожидаемый интерфейс клиента. Адаптер позволяет классам работать вместе с несовместимыми интерфейсами / Convert the interface of a class into another interface the clients
 expect. Adapter lets classes work together that couldn't otherwise because of
 incompatible interfaces. / 
 

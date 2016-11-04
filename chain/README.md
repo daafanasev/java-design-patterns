@@ -11,7 +11,7 @@ tags:
 ---
 
 ## Назначение / Intent /
-Избегает связи отправителя запроса с приемником, предоставляя Chain, больше чем одному объекту, обработать запрос. Chain получает объекты и передает запрос далее до объекта обработки.   / Avoid coupling the sender of a request to its receiver by giving
+Избегает связи отправителя запроса с приемником, предоставляя Chain (цепочка - передается обработка от одного к другому), больше чем одному объекту, обработать запрос. Chain получает объекты и передает запрос далее до объекта обработки.   / Avoid coupling the sender of a request to its receiver by giving
 more than one object a chance to handle the request. Chain the receiving
 objects and pass the request along the chain until an object handles it. /
 

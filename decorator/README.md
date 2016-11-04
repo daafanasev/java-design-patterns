@@ -13,19 +13,19 @@ tags:
 ## Also known as
 Wrapper
 
-## Intent
-Attach additional responsibilities to an object dynamically.
+## Назначение  / Intent /
+Динамически добавляет дополнительные обязаности объекту. Decorators обеспечивает гибкую альтернативу подклассам для расширения функциональности.  / Attach additional responsibilities to an object dynamically.
 Decorators provide a flexible alternative to subclassing for extending
-functionality.
+functionality. /
 
 ![alt text](./etc/decorator.png "Decorator")
 
-## Applicability
-Use Decorator
+## Применение  / Applicability /
+Используйте Decorator  / Use Decorator /
 
-* to add responsibilities to individual objects dynamically and transparently, that is, without affecting other objects
-* for responsibilities that can be withdrawn
-* when extension by subclassing is impractical. Sometimes a large number of independent extensions are possible and would produce an explosion of subclasses to support every combination. Or a class definition may be hidden or otherwise unavailable for subclassing
+* чтобы добавить обязаностей индивидуальным объектам динамически и прозрачно, без затрагивания других объектов / to add responsibilities to individual objects dynamically and transparently, that is, without affecting other objects /
+* для обязаностей, которые могут быть отозваны  / for responsibilities that can be withdrawn /
+* когда расширение на подклассы не практично. Иногда большое число зависимых расширений приводит к сложной поддержке структуры  подклассов.  when extension by subclassing is impractical. Sometimes a large number of independent extensions are possible and would produce an explosion of subclasses to support every combination. Or a class definition may be hidden or otherwise unavailable for subclassing
 
 ## Credits
 

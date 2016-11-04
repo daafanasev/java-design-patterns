@@ -12,7 +12,7 @@ tags:
 ---
 
 ## Назначение / Intent /
-Обратный вызов представляет собой кусок кода, который предается как аргумент метода в другой код, которые выполняет обратный вызов аргумента через некоторое время   / Callback is a piece of executable code that is passed as an
+Обратный вызов представляет собой кусок кода, который предается как аргумент метода в другой код, который выполняет обратный вызов аргумента через некоторое время   / Callback is a piece of executable code that is passed as an
 argument to other code, which is expected to call back (execute) the argument
 at some convenient time.  /
 

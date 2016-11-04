@@ -10,17 +10,17 @@ tags:
  - Performance
 ---
 
-## Intent
-To avoid expensive re-acquisition of resources by not releasing
+## Назначение / Intent /
+Для того, чтобы не тратить время на повторное создание ресурсов после их использования. Ресурсы сохраняются в некотором быстром хранилище, и по необходимости возвращаются из хранилища / To avoid expensive re-acquisition of resources by not releasing
 the resources immediately after their use. The resources retain their identity, are kept in some
-fast-access storage, and are re-used to avoid having to acquire them again.
+fast-access storage, and are re-used to avoid having to acquire them again. /
 
 ![alt text](./etc/caching.png "Caching")
 
-## Applicability
-Use the Caching pattern(s) when
+## Применение / Applicability / 
+Шаблон Caching используется когда / Use the Caching pattern(s) when /
 
-* Repetitious acquisition, initialization, and release of the same resource causes unnecessary performance overhead.
+* Повторное создание, инициализация одного и того же ресурса приводит к снижению производительности / Repetitious acquisition, initialization, and release of the same resource causes unnecessary performance overhead. /
 
 ## Credits
 

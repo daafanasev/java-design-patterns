@@ -10,13 +10,19 @@ tags:
 ---
 
 ## Intent
-The Half-Sync/Half-Async pattern decouples synchronous I/O from
-asynchronous I/O in a system to simplify concurrent programming effort without
-degrading execution efficiency.
+Шаблон Half-Sync / Half-Async отделяет синхронный ввод-вывод от асинхронного ввода-вывода в системе, чтобы упростить параллельное программирование без снижения эффективности выполнения. / The Half-Sync/Half-Async pattern decouples synchronous I/O from
+asynchronous I/O in a system to simplify concurrent programming effort without degrading execution efficiency.
 
 ![Half-Sync/Half-Async class diagram](./etc/half-sync-half-async.png)
 
-## Applicability
+## Применение / Applicability 
+Используйте шаблон Half-Sync / Half-Async, если
+* система обладает следующими характеристиками:
+   * система должна выполнять задачи в ответ на внешние события, которые происходят асинхронно, например, аппаратные прерывания в ОС
+   * нецелесообразно выделять отдельный поток управления для выполнения синхронного ввода-вывода для каждого внешнего источника события
+   * задачи более высокого уровня в системе могут быть значительно упрощены, если операции ввода / вывода выполняются синхронно.
+ * одна или несколько задач в системе должны выполняться в одном потоке управления, в то время как другие задачи могут работать в многопоточности.
+ 
 Use Half-Sync/Half-Async pattern when
 
 * a system possesses following characteristics:
